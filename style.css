@@ -1,0 +1,124 @@
+.chirplogo {
+    font-weight: bolder;
+    color: #000000;
+}
+.button {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #000000;
+    border-radius: 25px;
+    text-align: center;
+    color:  #f9fafc;
+}
+div {
+    display: flex;
+    flex-direction: column;
+}
+h3 {
+    margin: 0;
+    font-size: 30px;
+    color: #000000;
+}
+p {
+    border-left: 2px solid #69696a;
+    padding-left: 10px;
+}
+a {
+    padding: 2px 0px;
+    text-decoration: none;
+    color: #69696a;
+}
+
+@media only screen and (min-width: 1200px) {
+
+.button {
+    width: fit-content;
+    padding: 10px 40px;
+}
+.button:hover {
+    background-color:  rgba(207, 130, 213, 0.6);
+}
+.scroll {
+    position: absolute;
+    left: 44%;
+    top: 88%;
+}
+.chirplogo {
+    width: 60%;
+}
+
+.navitem:hover {
+    color: rgba(247, 193, 162, 0.7);
+}
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.circle{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    position: absolute;
+    left: 65%;
+    top: 10%;
+}
+.a{
+    background-color: rgba(247, 136, 167, 0.6);
+    animation: moveA 10s linear infinite;
+}
+.b{
+    background-color: rgba(247, 193, 162, 0.7) ;
+    animation: moveB 5s linear infinite;
+}
+.c{
+    background-color: rgba(207, 130, 213, 0.6) ;
+    animation: moveC 20s linear infinite;
+}
+
+@keyframes rotate{
+    0%    {-webkit-transform: rotate(0deg);}
+    100%  {-webkit-transform: rotate(360deg);}
+}
+@keyframes moveA{
+    0%    {-webkit-transform: scale(1);left:0px; top:100px;}
+    40%   {-webkit-transform: scale(1.5); top:200px; left:100px;}
+    50%   {-webkit-transform: scale(1); top:200px; left:200px;}
+    75%   {-webkit-transform: scale(0.5); top:200px; left:100px;}
+    100%  {-webkit-transform: scale(1);left:0px; top:100px;}
+}
+@keyframes moveB{
+    0%    {-webkit-transform: scale(1);left:200px; top:100px;}
+    25%   {-webkit-transform: scale(1.5); top:100px; left:100px;}
+    50%   {-webkit-transform: scale(1); top:100px; left:0px;}
+    75%   {-webkit-transform: scale(0.5); top:100px; left:100px;}
+    100%  {-webkit-transform: scale(1);left:200px; top:100px;}
+}
+@keyframes moveC{
+    0%    {-webkit-transform: scale(1);left:100px; top:200px;}
+    25%   {-webkit-transform: scale(1.5); top:100px; left:100px;}
+    50%   {-webkit-transform: scale(1); top:0px; left:100px;}
+    75%   {-webkit-transform: scale(0.5); top:100px; left:100px;}
+    100%  {-webkit-transform: scale(1);left:100px; top:200px;}
+}
+
+h3 {
+    margin-top: 125px;
+    height:50%;
+}
+p {
+    height: 50%;
+    width: 50%;
+}
+
+body {
+    display: block;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #69696a;
+    background-color: #f9fafc;
+}
+}
